@@ -5,7 +5,7 @@ import Contact from "./pages/Contact.js";
 function App() {
   return (
     <div className="App">
-      <Contact/>
+      <Home/>
     </div>
   );
 }

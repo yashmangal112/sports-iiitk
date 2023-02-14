@@ -1,5 +1,6 @@
 import Header from "../common/Header.js";
 import Footer from "../common/Footer.js";
+import Contact from "../pages/Contact"
 function Home(){
     return (
         <div>
@@ -15,6 +16,7 @@ function Home(){
                 <img src={require("../images/Rectangle 17.png")} alt="img2"></img>
                 <img src={require("../images/Rectangle 11.png")} alt="img3"></img>
             </div>
+            <Contact/>
             <Footer/>
         </div>
     );
