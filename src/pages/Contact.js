@@ -1,9 +1,9 @@
-import Header from "../common/Header.js";
-import Footer from "../common/Footer.js";
+// import Header from "../common/Header.js";
+// import Footer from "../common/Footer.js";
 function Contact(){
     return (
         <div>
-            <Header/>
+            {/* <Header/> */}
             <div className="contact">
                 <div className="hello">
                     <div className="contactleft">
@@ -35,7 +35,7 @@ function Contact(){
                     </div>
                 </div>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     );
 }

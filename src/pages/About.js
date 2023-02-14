@@ -1,9 +1,9 @@
-import Header from "../common/Header.js";
-import Footer from "../common/Footer.js";
+// import Header from "../common/Header.js";
+// import Footer from "../common/Footer.js";
 function About(){
     return (
         <div>
-            <Header/>
+            {/* <Header/> */}
             <div className="about">
                 <div className="about1">
                     <img className="aboutimg" src={require("../images/About-1.png")} alt="about-img"></img>
@@ -18,7 +18,7 @@ function About(){
                     </div>
                 </div>
             </div>
-            <Footer/>
+            {/* <Footer/> */}
         </div>
     );
 }
