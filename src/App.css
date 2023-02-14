@@ -60,7 +60,7 @@ input{
   background-color: #337BE6;
 }
 .logo{
-  height: 70px;
+  height: 100px;
   top:0;
   background-color: #1A69E0;
   width: 130px;
@@ -124,13 +124,16 @@ input{
   padding:30px;
 }
 .page{
-  background-color: #044581;
+  background: linear-gradient(97.73deg, #012253 42.35%, #010F28 96.47%);
+  background-image: url("./images/Vector group.png");
+  background-repeat: no-repeat;
+  background-position: -1%;
   height:90vh;
   width: 100vw;
 }
 .main{
   padding:6% 15%;
-  width:35vw;
+  width:60vw;
   font-size:24px;
   color:white;
 }
@@ -143,7 +146,7 @@ input{
   display:flex;
   background-color: black;
   color:white;
-  padding:10% 6% 0 6%;
+  padding:15% 6% 6% 6%;
 }
 .about1{
   width:50vw;
@@ -161,7 +164,7 @@ input{
   padding:3%; 
   font-size:24px;
   border:solid #04d9ff;
-  width:max(100px,31%);
+  width:max(100px,38%);
   border-radius: 10%;
 }
 .desc{
@@ -174,7 +177,7 @@ input{
   padding:3%;
   font-size: 24px;
   border:solid #1F51FF;
-  width:max(100px,27%);
+  width:max(120px,34%);
   border-radius:10%;
 }
 .contact{
