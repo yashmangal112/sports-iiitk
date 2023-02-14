@@ -1,8 +1,6 @@
 body{
   font: Arial;
-}
-h1{
-  margin:0;
+  overflow-x:hidden;
 }
 ul{
   padding:0px;
@@ -12,6 +10,7 @@ li{
   padding: 5px;
 }
 h1{
+  margin:0;
   font-size: 64px;
   padding-bottom: 40px;
   color:white;
@@ -25,8 +24,14 @@ a{
 }
 img{
   padding: 0 40px 0 40px;
-  width: 18vw;
-  height: auto;
+}
+input{
+  border: 0;
+  color:grey;
+  margin: 10px;
+  margin-top:30px;
+  width:45%;
+  height: 25px;
 }
 .header{
   background-color: black;
@@ -37,6 +42,7 @@ img{
   margin-right: 5%;
   padding: 8px;
 }
+
 .headlist{
   padding-inline: 2%;
 }
@@ -46,14 +52,17 @@ img{
   margin-left: 2%;
   padding: 3px 9px 3px 9px;
   font-size: 16px;
-  background-color: #5EA4FF;
+  background-color: black;
   border-radius: 3px;
   text-align: center;
+}
+.button1{
+  background-color: #337BE6;
 }
 .logo{
   height: 70px;
   top:0;
-  background-color: #5EA4FF;
+  background-color: #1A69E0;
   width: 130px;
   color: white;
   font-weight:500;
@@ -65,10 +74,10 @@ img{
   border-radius: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  box-shadow: 0px 0px 2px 2px #5EA4FF;
+  box-shadow: 0px 0px 2px 2px #1A69E0;
 }
 .footbar{
-  padding-top:300px;
+  padding-top:200px;
   width: 100vw;
   background-color: black;
   color:white;
@@ -82,14 +91,16 @@ img{
 }
 .top{
   display:flex;
-  border-bottom: solid;
-  padding-bottom: 100px;
 }
 .left-side{
   flex:1;
   width:35vw;
   text-align: left;
   margin-right:5%;
+  font-size:18px;
+}
+.signature{
+  padding: 0;
 }
 .right-side{
   flex:1;
@@ -98,11 +109,22 @@ img{
   font-size: 18px;
   margin-left:15%;
 }
+.icons{
+  padding-top: 50px;
+  border-bottom: solid;
+  padding-bottom: 50px;
+}
+.icon{
+  border-radius: 50%;
+  margin: 3%;
+  padding:0;
+  width:3%;
+}
 .designed-by{
   padding:30px;
 }
 .page{
-  background-color: blue;
+  background-color: #044581;
   height:90vh;
   width: 100vw;
 }
@@ -116,4 +138,103 @@ img{
   position: absolute;
   top:90vh;
   padding-left: 15%;
+}
+.about{
+  display:flex;
+  background-color: black;
+  color:white;
+  padding:10% 6% 0 6%;
+}
+.about1{
+  width:50vw;
+}
+.aboutimg{
+  width:75%;
+}
+.text{
+  flex:1;
+  width:50vw;
+  padding-left: 2%;
+}
+.head{
+  color:#04d9ff;
+  padding:3%; 
+  font-size:24px;
+  border:solid #04d9ff;
+  width:max(100px,31%);
+  border-radius: 10%;
+}
+.desc{
+  padding:5% 0 5% 0;
+  width:80%;
+  text-align: justify;
+}
+.random{
+  color: #1F51FF;
+  padding:3%;
+  font-size: 24px;
+  border:solid #1F51FF;
+  width:max(100px,27%);
+  border-radius:10%;
+}
+.contact{
+  background-color: #0B0B45;
+  color:white;
+  display:flex;
+}
+.hello{
+  width:50%;
+}
+.contactleft{
+  margin:10% 15% 10% 10%;
+  padding:10% 10% 10% 10%;
+  color: white;
+  text-align: center;
+  border: solid red;
+  border-radius: 5%;
+}
+.contactinfo{
+  font-size: 32px;
+  margin:0;
+}
+.sports{
+  margin-bottom: 0;
+  font-size:24px;
+}
+.getintouch{
+  text-align: center;
+  margin: auto auto auto auto;
+  border: solid #04d9ff;
+  border-radius: 5%;
+  padding: 4.5%;
+  margin-right:5%;
+}
+.get-in-touch{
+  color: #04d9ff;
+  font-size: 32px;
+}
+textarea{
+  width:90%;
+  margin-top: 20px;
+  height: 20vh;
+  font:Arial grey;
+  resize:none;
+}
+.submit{
+  color:white;
+  background-color: #4B92DB;
+  width:max(70px,15%);
+  font-size: 24px;
+  height: 5vh;
+  cursor: pointer;
+}
+.icon-contact{
+  margin-right:0;
+  margin-top:20%;
+}
+.icon1{
+  border-radius: 50%;
+  margin: 3%;
+  padding:16px;
+  width:8%;
 }
