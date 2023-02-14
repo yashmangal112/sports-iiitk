@@ -1,5 +1,5 @@
-import Header from "./common/Header.js";
-import Footer from "./common/Footer.js";
+import Header from "../common/Header.js";
+import Footer from "../common/Footer.js";
 function Home(){
     return (
         <div>
@@ -11,9 +11,9 @@ function Home(){
                 </div>
             </div>
             <div className="photos">
-                <img src={require("../images/Rectangle 8.png")}></img>
-                <img src={require("../images/Rectangle 17.png")}></img>
-                <img src={require("../images/Rectangle 11.png")}></img>
+                <img src={require("../images/Rectangle 8.png")} alt="img1"></img>
+                <img src={require("../images/Rectangle 17.png")} alt="img2"></img>
+                <img src={require("../images/Rectangle 11.png")} alt="img3"></img>
             </div>
             <Footer/>
         </div>
