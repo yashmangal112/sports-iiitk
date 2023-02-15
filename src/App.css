@@ -152,12 +152,9 @@ input {
 }
 .about1 {
     width: 40vw;
-    background: linear-gradient(276.37deg, #01112a 59.06%, #0b2353 88.27%);
-    border: 3px solid #082560;
-    border-radius: 8px;
-}
-.aboutimg {
-    width: 100%;
+    background-image: url("./images/Vector\ 64.png");
+    background-repeat: no-repeat;
+    background-position: 50%;
 }
 .text {
     flex: 1;
@@ -239,6 +236,7 @@ textarea {
     height: 5vh;
     border-radius: 10px;
     padding-top: 2px;
+    margin:20px;
     cursor: pointer;
 }
 .icon-contact {
