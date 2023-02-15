@@ -16,12 +16,17 @@ body {
     background-color: #0c142c;
 }
 
+.active{
+    background: linear-gradient(286.3deg, #337BE6 36.42%, rgba(88, 176, 240, 0.26) 130.9%);
+  }
+  
+
 .bg-image-team {
     position: absolute;
     background-image: url(./images/Team-bg.png);
     background-color: transparent;
     background-repeat: no-repeat;
-    margin-top: 2.5rem;
+    margin-top: 8.3rem;
     margin-left: 25rem;
     height: 100%;
     width: 100%;

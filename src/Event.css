@@ -11,6 +11,11 @@
     z-index:-1;
 }
 
+.active{
+    background: linear-gradient(286.3deg, #337BE6 36.42%, rgba(88, 176, 240, 0.26) 130.9%);
+  }
+  
+
 .title {
     position: absolute;
     margin: auto;

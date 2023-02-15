@@ -51,11 +51,18 @@ input{
   margin-right: 2%;
   margin-left: 2%;
   padding: 3px 9px 3px 9px;
-  font-size: 16px;
+  font-size: 14px;
   background-color: black;
-  border-radius: 3px;
+  border-radius: 4px;
   text-align: center;
 }
+
+.headlist a:hover{
+  background: linear-gradient(286.3deg, #337BE6 36.42%, rgba(88, 176, 240, 0.26) 130.9%);
+}
+
+
+
 .button1{
   background-color: #337BE6;
 }
