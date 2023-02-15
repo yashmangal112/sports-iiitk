@@ -8,6 +8,7 @@ import Team from "./pages/Team.js";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
+<<<<<<< HEAD
   
   return (
     <div className="App">
@@ -21,6 +22,19 @@ function App() {
       </Router>
     </div>
   );
+=======
+    return (
+        <div className="App">
+            <Router>
+                <Routes>
+                    <Route exact path="/" element={<Home />} />
+                    <Route exact path="/event" element={<Event />} />
+                    <Route exact path="/team" element={<Team />} />
+                </Routes>
+            </Router>
+        </div>
+    );
+>>>>>>> c5e91db9af0af1f98f0128cf74f5a81456b1a619
 }
 
 export default App;
