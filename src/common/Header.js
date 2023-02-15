@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 function Header() {
     return (
         <div>
@@ -5,29 +6,29 @@ function Header() {
                 <div className="list">
                     <ul>
                         <li className="headlist">
-                            <a href="/" className="button">
+                            <NavLink to="/" className="button">
                                 HOME
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="headlist">
-                            <a href="/about" className="button">
+                            <NavLink to="/about" className="button">
                                 ABOUT
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="headlist">
-                            <a href="/team" className="button">
+                            <NavLink to="/team" className="button">
                                 TEAM
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="headlist">
-                            <a href="event" className="button">
+                            <NavLink to="/event" className="button">
                                 EVENT
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="headlist">
-                            <a href="contact" className="button">
+                            <NavLink to="/contact" className="button">
                                 CONTACT
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>
