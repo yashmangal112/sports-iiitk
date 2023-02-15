@@ -2,9 +2,11 @@ body {
     font: Arial;
     overflow-x: hidden;
 }
+
 ul {
     padding: 0px;
 }
+
 li {
     display: inline-block;
     padding: 5px;
@@ -16,16 +18,20 @@ h1 {
     padding-bottom: 40px;
     color: white;
 }
+
 h3 {
     margin-top: 0;
 }
+
 a {
     text-decoration: none;
     color: white;
 }
+
 img {
     padding: 0 40px 0 40px;
 }
+
 input {
     border: 0;
     color: grey;
@@ -34,10 +40,12 @@ input {
     width: 45%;
     height: 25px;
 }
+
 .header {
     background-color: black;
     width: 100vw;
 }
+
 .list {
     text-align: right;
     margin-right: 5%;
@@ -47,6 +55,7 @@ input {
 .headlist {
     padding-inline: 2%;
 }
+
 .button {
     color: white;
     margin-right: 2%;
@@ -57,9 +66,19 @@ input {
     border-radius: 3px;
     text-align: center;
 }
+
+.headlist .button:hover {
+    background: linear-gradient(286.3deg, #337BE6 36.42%, rgba(88, 176, 240, 0.26) 130.9%);
+}
+
+.active{
+    background: linear-gradient(286.3deg, #337BE6 36.42%, rgba(88, 176, 240, 0.26) 130.9%);
+}
+
 .button1 {
     background-color: #337be6;
 }
+
 .logo {
     height: 100px;
     top: 0;
@@ -77,6 +96,7 @@ input {
     border-top-right-radius: 0;
     box-shadow: 0px 0px 2px 2px #1a69e0;
 }
+
 .footbar {
     padding-top: 200px;
     width: 100vw;
@@ -84,14 +104,17 @@ input {
     color: white;
     text-align: center;
 }
+
 .footer {
     width: 80vw;
     display: inline-block;
     margin: 0 auto;
 }
+
 .top {
     display: flex;
 }
+
 .left-side {
     flex: 1;
     width: 35vw;
@@ -99,9 +122,11 @@ input {
     margin-right: 5%;
     font-size: 18px;
 }
+
 .signature {
     padding: 0;
 }
+
 .right-side {
     flex: 1;
     width: 35vw;
@@ -109,20 +134,24 @@ input {
     font-size: 18px;
     margin-left: 15%;
 }
+
 .icons {
     padding-top: 50px;
     border-bottom: solid;
     padding-bottom: 50px;
 }
+
 .icon {
     border-radius: 100%;
     margin: 3%;
     padding: 0;
     width: 3%;
 }
+
 .designed-by {
     padding: 30px;
 }
+
 .page {
     background: linear-gradient(97.73deg, #012253 42.35%, #010f28 96.47%);
     background-image: url("./images/Vector group.png"),
@@ -132,17 +161,20 @@ input {
     height: 90vh;
     width: 100vw;
 }
+
 .main {
     padding: 6% 15%;
     width: 60vw;
     font-size: 24px;
     color: white;
 }
+
 .photos {
     position: absolute;
     top: 90vh;
     padding-left: 15%;
 }
+
 .about {
     display: flex;
     background: linear-gradient(276.37deg, #01112a 59.06%, #0b2353 88.27%);
@@ -150,16 +182,19 @@ input {
     color: white;
     padding: 15% 6% 6% 6%;
 }
+
 .about1 {
     width: 40vw;
     background-image: url("./images/Vector\ 64.png");
     background-repeat: no-repeat;
     background-position: 50%;
 }
+
 .text {
     flex: 1;
     padding-left: 10%;
 }
+
 .head {
     color: #5be1ff;
     background: #01112a;
@@ -170,11 +205,13 @@ input {
     width: max(100px, 35%);
     border-radius: 10%;
 }
+
 .desc {
     padding: 5% 0 5% 0;
     width: 80%;
     text-align: justify;
 }
+
 .random {
     color: #034ebe;
     padding: 3%;
@@ -187,11 +224,13 @@ input {
     width: max(120px, 31%);
     border-radius: 10%;
 }
+
 .contact {
     background-color: #01112a;
     color: white;
     display: flex;
 }
+
 .contactleft {
     margin: 10% 5% 10% 10%;
     padding: 3%;
@@ -203,24 +242,29 @@ input {
     border-radius: 10px;
     width: 50%;
 }
+
 .contactinfo {
     font-size: 32px;
     margin: 0;
 }
+
 .sports {
     margin-bottom: 0;
     font-size: 24px;
 }
+
 .getintouch {
     text-align: center;
     margin: auto auto auto auto;
     padding: 2%;
     margin: 10% 10% 10% 5%;
 }
+
 .get-in-touch {
     color: #04d9ff;
     font-size: 32px;
 }
+
 textarea {
     width: 90%;
     margin-top: 20px;
@@ -228,6 +272,7 @@ textarea {
     font: Arial grey;
     resize: none;
 }
+
 .submit {
     color: white;
     background-color: #4b92db;
@@ -236,25 +281,27 @@ textarea {
     height: 5vh;
     border-radius: 10px;
     padding-top: 2px;
-    margin:20px;
+    margin: 20px;
     cursor: pointer;
 }
+
 .icon-contact {
     margin-right: 0;
     margin-top: 13%;
 }
+
 .icon1 {
     border-radius: 100%;
     padding: 16px;
     width: 60px;
 }
+
 .button:hover {
-    background: linear-gradient(
-        286.3deg,
-        #337be6 36.42%,
-        rgba(88, 176, 240, 0.26) 130.9%
-    );
+    background: linear-gradient(286.3deg,
+            #337be6 36.42%,
+            rgba(88, 176, 240, 0.26) 130.9%);
 }
+
 .message::placeholder {
     font-family: Arial;
 }
