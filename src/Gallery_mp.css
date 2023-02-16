@@ -9,6 +9,7 @@
     background-color: #000000;
     opacity: 0.5;
     z-index: -1;
+    margin-top: 15px;
 }
 
 .heading-gallery {
@@ -35,9 +36,74 @@
     font-weight: 400;
     font-size: 21px;
     line-height: 31px;
-    width:840px;
+    width: 840px;
     height: 125px;
     margin-left: auto;
     margin-right: auto;
-    margin-top:60px;
+    margin-top: 60px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-root {
+    margin-top: 250px;
+}
+
+
+.carousel .slide {
+    height: 25rem;
+}
+
+.carousel .slide img {
+    max-height: 100%;
+    width: auto;
+}
+
+.image {
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 100%;
+    width: 500px;
+}
+
+.carousel-status,
+.thumb,
+.control-dots {
+    visibility: hidden;
+}
+
+.carousel .control-prev.control-arrow {
+    margin-left: 50px;
+}
+
+
+
+.carousel .control-next.control-arrow {
+    margin-right: 50px;
+}
+
+
+.rectangle-right {
+    position: absolute;
+    width: 110px;
+    height: 697px;
+    right: 100px;
+    top: 482px;
+
+    background: rgba(2, 43, 123, 0.64);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.rectangle-left {
+    position: absolute;
+    width: 110px;
+    height: 697px;
+    left: 100px;
+    top: 482px;
+
+    background: rgba(2, 43, 123, 0.64);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
 }
