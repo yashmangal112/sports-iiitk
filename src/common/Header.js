@@ -26,6 +26,11 @@ function Header() {
                             </NavLink>
                         </li>
                         <li className="headlist">
+                            <NavLink to="/gallery" className="button">
+                                Gallery
+                            </NavLink>
+                        </li>
+                        <li className="headlist">
                             <NavLink to="/contact" className="button">
                                 CONTACT
                             </NavLink>
