@@ -11,9 +11,9 @@ function Header() {
                             </NavLink>
                         </li>
                         <li className="headlist">
-                            <NavLink to="/about" className="button">
+                            <a href="#about" className="button">
                                 ABOUT
-                            </NavLink>
+                            </a>
                         </li>
                         <li className="headlist">
                             <NavLink to="/team" className="button">
@@ -31,9 +31,9 @@ function Header() {
                             </NavLink>
                         </li>
                         <li className="headlist">
-                            <NavLink to="/contact" className="button">
+                            <a href="#contact" className="button">
                                 CONTACT
-                            </NavLink>
+                            </a>
                         </li>
                     </ul>
                 </div>

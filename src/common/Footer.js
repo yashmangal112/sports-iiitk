@@ -11,6 +11,7 @@ function Footer() {
                                 alt="signature"
                             />
                         </div>
+                        <div className="footer-desc">
                         <div>
                             Lorem ipsum dolor sit amet, consectetur adipscing
                             elit. Nunc vulputate libero et velit interdum, ac
@@ -34,6 +35,7 @@ function Footer() {
                                     <a href="/contact">Contact</a>
                                 </li>
                             </ul>
+                        </div>
                         </div>
                     </div>
                     <div className="space"></div>
