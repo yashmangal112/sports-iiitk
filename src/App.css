@@ -198,7 +198,9 @@ footer{
 
 .about {
     display: flex;
-    background: linear-gradient(276.37deg, #01112a 59.06%, #0b2353 88.27%);
+    /* background: linear-gradient(276.37deg, #01112a 59.06%, #0b2353 88.27%); */
+    /* background: #01112a; */
+    background: #010917;
     background-repeat: no-repeat;
     color: white;
     padding: 15% 6% 6% 6%;
@@ -206,9 +208,10 @@ footer{
 
 .about1 {
     width: 40vw;
-    background-image: url("./images/Vector\ 64.png");
+    background-image: url("./images/Vector 64.png");
     background-repeat: no-repeat;
     background-position: 50%;
+    padding: 24px 0px;
 }
 
 .text {
@@ -263,7 +266,8 @@ footer{
 }
 
 .contact {
-    background-color: #01112a;
+    /* background-color: #01112a; */
+    background: #010917;
     color: white;
     display: flex;
 }
@@ -346,7 +350,13 @@ footer{
 
     color: rgba(255, 255, 255, 0.9);
 }
-
+.shadow img{
+        position: absolute;
+        right: 0;
+        bottom: 1%;
+        padding: 0;
+        opacity: 78%;
+}
 textarea {
     width: 90%;
     margin-top: 20px;
