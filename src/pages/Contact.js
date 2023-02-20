@@ -5,47 +5,36 @@ function Contact() {
         <div className="contactleft">
           <h1 className="contactinfo">CONTACT INFORMATION</h1>
           <h3 className="sports"> Sports Secretary</h3>
-          <div className="contact-flex">
-            <img id="phone-img" src={require("../images/Vector.png")} alt="#" />
-            <p className="detail-contact">+91 7014161228</p>
-          </div>
-          <div className="contact-flex">
-            <img src={require("../images/Vector1.png")} alt="#" />
-            <p className="detail-contact">cultural_society@xyz.com</p>
-          </div>
-          <div className="contact-flex">
-            <img src={require("../images/Vector2.png")} alt="#" />
-            <p className="detail-contact">Prabha Bhawan, MNIT</p>
+          <div className="secretery-info">
+            <div className="contact-flex">
+              {/* <img id="phone-img" src={require("../images/Vector.png")} alt="#" /> */}
+              <i className="fa fa-phone"></i>
+              <p className="detail-contact">+91 7014151228</p>
+            </div>
+            <div className="contact-flex">
+            <i className="fa fa-envelope"></i>
+              {/* <img src={require("../images/Vector1.png")} alt="#" /> */}
+              <p className="detail-contact">cultural_society@xyz.com</p>
+            </div>
+            <div className="contact-flex">
+            <i className="fa fa-location-dot"></i>
+              {/* <img src={require("../images/Vector2.png")} alt="#" /> */}
+              <p className="detail-contact">Prabha Bhawan, MNIT</p>
+            </div>
           </div>
           <img id="design" src={require("../images/Football.png")} alt="" />
           <div className="icon-contact">
             <a href="https://www.facebook.com/rujul.patel.121/">
-              <img
-                className="icon1"
-                src={require("../images/facebook.png")}
-                alt="facebook"
-              ></img>
+            <i className="fa fa-facebook"></i>
             </a>
             <a href="https://twitter.com/Rujul_14">
-              <img
-                className="icon1"
-                src={require("../images/twitter.png")}
-                alt="twitter"
-              ></img>
+            <i className="fa fa-twitter"></i>
             </a>
             <a href="https://www.instagram.com/rujul_09/">
-              <img
-                className="icon1"
-                src={require("../images/instagram.png")}
-                alt="instagram"
-              ></img>
+              <i className="fa fa-instagram"></i>
             </a>
             <a href="https://www.linkedin.com/in/rujul-dudhat/">
-              <img
-                className="icon1"
-                src={require("../images/linkedin.png")}
-                alt="linkedin"
-              ></img>
+            <i className="fa fa-linkedin"></i>
             </a>
           </div>
         </div>

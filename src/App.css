@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+
 body {
     font: Arial;
     overflow-x: hidden;
@@ -157,7 +159,7 @@ input {
     background-image: url("./images/Vector group.png"),
         url("./images/men-with-football.png");
     background-repeat: no-repeat, no-repeat;
-    background-position: -1%, 61vw;
+    background-position: -1%, 56vw;
     height: 90vh;
     width: 100vw;
 }
@@ -273,25 +275,23 @@ input {
     background-image: url('./images/Ellipse17.png');
     background-repeat: no-repeat;
     background-position: 100% 100%;
+    position: relative;
 }
 
 .contactinfo {
     font-size: 32px;
     margin: 0;
+    font-family: emoji;
 }
 
 .contact-flex {
     display: flex;
     padding-left: 40px;
     line-height: 0.3;
+    align-items: center;
+    margin: 12px 0px;
 }
 
-.contact-flex img {
-    width: 10px;
-    height: 20px;
-    padding: 0;
-    margin-top: 10px;
-}
 #phone-img{
     margin-top: 18px;
 }
@@ -301,9 +301,10 @@ input {
 
 
 .sports {
-    margin-bottom: 0;
+    margin-bottom: 24px;
     font-size: 24px;
     margin-left: -40%;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 .getintouch {
@@ -348,10 +349,27 @@ textarea {
     margin: 20px;
     cursor: pointer;
 }
-
+.secretery-info{
+    margin-bottom: inherit;
+    /* font-family: 'Ubuntu', sans-serif; */
+}
+.secretery-info i{
+    font-size: 18px;
+    color: #5BE1FF;
+}
 .icon-contact {
-    margin-right: 135px;
-    margin-top: 30%;
+    display: flex;
+    position: absolute;
+    bottom: 12%;
+    /* margin-right: 135px; */
+    /* margin-top: 30%; */
+}
+.icon-contact i{
+    margin: 0 12px;
+    font-size: 21px;
+}
+.icon-contact i:hover{
+    color: #5BE1FF
 }
 #design{
     position: absolute;
