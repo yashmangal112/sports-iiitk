@@ -7,7 +7,7 @@ function Event() {
     return (
         <div>
             <Header />
-            <div>
+            <div className="event">
                 <div className="bg-image"></div>
                 <div className="title">
                     <p>Events</p>

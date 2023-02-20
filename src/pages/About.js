@@ -27,7 +27,7 @@ function About() {
                     <div className="random">Random Staff</div>
                 </div>
             </div>
-            <div className="shadow">
+            <div className="shadow2">
                 <img
                     className="aboutimg"
                     src={require("../images/Ellipse 4.png")}
