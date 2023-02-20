@@ -10,7 +10,11 @@ function About() {
                     ></img>
                 </div>
                 <div className="text">
-                    <div className="head">About The Club</div>
+                    {/* <div className="head">About The Club</div> */}
+                    <div className="parrel">
+                        <div className="head"></div>
+                        <p className="text2">About the club</p>
+                    </div>
                     <div className="desc">
                         The Sports Union is represented by The Sports Union
                         Council which consists of The Sports Secretary, three
