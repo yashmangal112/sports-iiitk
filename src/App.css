@@ -71,7 +71,7 @@ input {
     background: linear-gradient(286.3deg, #337BE6 36.42%, rgba(88, 176, 240, 0.26) 130.9%);
 }
 
-.active{
+.active {
     background: linear-gradient(286.3deg, #337BE6 36.42%, rgba(88, 176, 240, 0.26) 130.9%);
 }
 
@@ -98,7 +98,7 @@ input {
 }
 
 .footbar {
-    padding-top: 200px;
+    padding-top: 88px;
     width: 100vw;
     background-color: black;
     color: white;
@@ -169,10 +169,23 @@ input {
     color: white;
 }
 
+.bg-image-home {
+    background-image: url('./images/Player\ of\ the\ year.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 800px;
+}
+
 .photos {
     position: absolute;
     top: 90vh;
     padding-left: 15%;
+}
+
+#arrow {
+    position: absolute;
+    left: 160px;
+    z-index: 1;
 }
 
 .about {
@@ -234,13 +247,16 @@ input {
 .contactleft {
     margin: 10% 5% 10% 10%;
     padding: 3%;
-    background-color: #082560;
+    background: rgba(2, 22, 61, 0.76);
+    box-shadow: 0px 0px 16px rgba(255, 74, 66, 0.56);
     color: white;
     text-align: center;
-    border: solid red;
     border-width: 1px 1px 1px 1px;
     border-radius: 10px;
-    width: 50%;
+    width: 60%;
+    background-image: url('./images/Ellipse17.png');
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
 }
 
 .contactinfo {
@@ -248,9 +264,30 @@ input {
     margin: 0;
 }
 
+.contact-flex {
+    display: flex;
+    padding-left: 40px;
+    line-height: 0.3;
+}
+
+.contact-flex img {
+    width: 10px;
+    height: 20px;
+    padding: 0;
+    margin-top: 10px;
+}
+#phone-img{
+    margin-top: 18px;
+}
+.detail-contact {
+    padding-left: 15px;
+}
+
+
 .sports {
     margin-bottom: 0;
     font-size: 24px;
+    margin-left: -40%;
 }
 
 .getintouch {
@@ -263,6 +300,14 @@ input {
 .get-in-touch {
     color: #04d9ff;
     font-size: 32px;
+    background-image: url('./images/Get\ IN\ Touch.png');
+    background-repeat: no-repeat;
+    background-size: 435px;
+    background-position: center;
+}
+
+.aboutinfo {
+    font-size: 24px;
 }
 
 textarea {
@@ -275,19 +320,27 @@ textarea {
 
 .submit {
     color: white;
-    background-color: #4b92db;
+    background: linear-gradient(0deg, rgba(0, 46, 208, 0.15), rgba(0, 46, 208, 0.15)), linear-gradient(180deg, #579AFF 0%, #3066BE 100%);
+    box-shadow: 0px 2px 4px rgba(57, 114, 205, 0.2), inset 0px -4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(249, 247, 243, 0.25);
     width: max(70px, 15%);
     font-size: 24px;
-    height: 5vh;
+    height: 7vh;
+    float: right;
+    width: 8vw;
     border-radius: 10px;
-    padding-top: 2px;
+    padding: 8px 16px;
     margin: 20px;
     cursor: pointer;
 }
 
 .icon-contact {
-    margin-right: 0;
-    margin-top: 13%;
+    margin-right: 135px;
+    margin-top: 30%;
+}
+#design{
+    position: absolute;
+    top:268%;
+    left: 32%;
 }
 
 .icon1 {
@@ -302,6 +355,19 @@ textarea {
             rgba(88, 176, 240, 0.26) 130.9%);
 }
 
-.message::placeholder {
+.input-css::placeholder {
     font-family: Arial;
+    padding: 10px;
+}
+
+
+
+.input-css {
+    border-color: #032364;
+    box-shadow: 0px 0px 10px #03215E;
+    border-radius: 4px;
+}
+
+.footer-desc{
+    margin-top:-120px;
 }

@@ -6,6 +6,7 @@ function Home() {
     return (
         <div>
             <Header />
+            <div className="bg-image-home">
             <div className="page">
                 <div className="main">
                     <h1>From Zero To Sports Hero</h1>
@@ -15,7 +16,13 @@ function Home() {
                     focus on enable
                 </div>
             </div>
-            <div className="photos">
+            </div>
+            <img id="arrow"
+                    src={require("../images/arrow.png")}
+                    alt="img1"
+                ></img>
+            <div id="about" className="photos">
+            
                 <img
                     src={require("../images/Rectangle 8.png")}
                     alt="img1"
