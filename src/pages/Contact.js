@@ -7,22 +7,18 @@ function Contact() {
           <h3 className="sports"> Sports Secretary</h3>
           <div className="secretery-info">
             <div className="contact-flex">
-              {/* <img id="phone-img" src={require("../images/Vector.png")} alt="#" /> */}
               <i className="fa fa-phone"></i>
               <p className="detail-contact">+91 7014151228</p>
             </div>
             <div className="contact-flex">
             <i className="fa fa-envelope"></i>
-              {/* <img src={require("../images/Vector1.png")} alt="#" /> */}
               <p className="detail-contact">cultural_society@xyz.com</p>
             </div>
             <div className="contact-flex">
             <i className="fa fa-location-dot"></i>
-              {/* <img src={require("../images/Vector2.png")} alt="#" /> */}
               <p className="detail-contact">Prabha Bhawan, MNIT</p>
             </div>
           </div>
-          <img id="design" src={require("../images/Football.png")} alt="" />
           <div className="icon-contact">
             <a href="https://www.facebook.com/rujul.patel.121/">
             <i className="fa fa-facebook"></i>
@@ -37,6 +33,7 @@ function Contact() {
             <i className="fa fa-linkedin"></i>
             </a>
           </div>
+          <img id="design" src={require("../images/Football.png")} alt="" />
         </div>
         <div className="getintouch">
           <h3 className="get-in-touch">GET IN TOUCH</h3>

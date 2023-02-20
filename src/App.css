@@ -40,7 +40,7 @@ input {
     margin: 10px;
     margin-top: 30px;
     width: 45%;
-    height: 25px;
+    height: 34px;
 }
 
 .header {
@@ -98,19 +98,25 @@ input {
     border-top-right-radius: 0;
     box-shadow: 0px 0px 2px 2px #1a69e0;
 }
-
+/* 
 .footbar {
     padding-top: 88px;
     width: 100vw;
     background-color: black;
     color: white;
     text-align: center;
+} */
+footer{
+    padding: 70px 5% 20px;
+    width:100vw;
+    background-color: black;
+    text-align: center;
 }
-
 .footer {
     width: 80vw;
     display: inline-block;
     margin: 0 auto;
+    color: white;
 }
 
 .top {
@@ -276,6 +282,7 @@ input {
     background-repeat: no-repeat;
     background-position: 100% 100%;
     position: relative;
+    height: 500px;
 }
 
 .contactinfo {
@@ -325,12 +332,25 @@ input {
 
 .aboutinfo {
     font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    /* font-weight: 500; */
+    /* font-size: 28px; */
+    line-height: 30px;
+    /* or 118% */
+
+    display: flex;
+    align-items: center;
+    text-align: justify;
+    letter-spacing: 0.02em;
+
+    color: rgba(255, 255, 255, 0.9);
 }
 
 textarea {
     width: 90%;
     margin-top: 20px;
-    height: 20vh;
+    height: 18vh;
     font: Arial grey;
     resize: none;
 }
@@ -372,9 +392,25 @@ textarea {
     color: #5BE1FF
 }
 #design{
-    position: absolute;
-    top:268%;
-    left: 32%;
+    position: absolute; 
+    bottom: 7%;
+    right: 6%;
+    padding: 0 20px 0 20px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 
+    100% { -moz-transform: rotate(360deg); } 
+}
+@-webkit-keyframes spin { 
+    100% { -webkit-transform: rotate(360deg); } 
+}
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
 }
 
 .icon1 {
@@ -404,4 +440,12 @@ textarea {
 
 .footer-desc{
     margin-top:-120px;
+}
+.footer .icons img{
+    background-color: #d9d9d9;
+    padding: 8px;
+    border-radius: 100%;
+    border: 2px solid;
+    border-color: #5BE1FF;
+    margin: 0px 12px;
 }

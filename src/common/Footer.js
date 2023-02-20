@@ -1,6 +1,6 @@
 function Footer() {
     return (
-        <div className="footbar">
+        <footer>
             <div className="footer">
                 <div className="top">
                     <div className="left-side">
@@ -52,44 +52,29 @@ function Footer() {
                 </div>
                 <div className="icons">
                     <a href="https://github.com/RujulP14">
-                        <img
-                            className="icon"
-                            src={require("../images/github.png")}
-                            alt="github"
-                        ></img>
+                    <img src="https://img.icons8.com/3d-fluency/24/null/github.png"/>
                     </a>
                     <a href="https://www.instagram.com/rujul_09/">
-                        <img
-                            className="icon"
-                            src={require("../images/instagram.png")}
-                            alt="instagram"
-                        ></img>
+                    <img src="https://img.icons8.com/fluency/24/null/instagram-new.png"/>
                     </a>
                     <a href="https://www.linkedin.com/in/rujul-dudhat/">
-                        <img
+                        {/* <img
                             className="icon"
                             src={require("../images/linkedin.png")}
                             alt="linkedin"
-                        ></img>
+                        ></img> */}
+                        <img src="https://img.icons8.com/color/24/null/linkedin.png"/>
                     </a>
                     <a href="https://www.youtube.com/">
-                        <img
-                            className="icon"
-                            src={require("../images/youtube.png")}
-                            alt="youtube"
-                        ></img>
+                    <img src="https://img.icons8.com/fluency/24/null/youtube-play.png"/>
                     </a>
                     <a href="https://www.facebook.com/rujul.patel.121/">
-                        <img
-                            className="icon"
-                            src={require("../images/facebook.png")}
-                            alt="facebook"
-                        ></img>
+                    <img src="https://img.icons8.com/fluency/24/null/facebook-new.png"/>
                     </a>
                 </div>
-                <div className="designed-by">♥ DESIGNED BY YASH MANGAL</div>
+                <div className="designed-by">❤️ DESIGNED BY YASH MANGAL</div>
             </div>
-        </div>
+        </footer>
     );
 }
 
