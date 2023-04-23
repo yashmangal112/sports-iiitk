@@ -34,32 +34,11 @@ function Event() {
                 <EventCard
                     image={image1}
                     subtitle={"Khel 2022- Intra College Sports Tournament"}
-                    detail={"365 students and 12 sports"}
-                    date={"Date of Event:21.09.2010"}
-                />
-                <EventCard
-                    image={image1}
-                    subtitle={"Khel 2022- Intra College Sports Tournament"}
-                    detail={"365 students and 13 sports"}
-                    date={"Date of Event:21.09.2010"}
-                />
-                <EventCard
-                    image={image1}
-                    subtitle={"Khel 2022- Intra College Sports Tournament"}
                     detail={"365 students and 14 sports"}
                     date={"Date of Event:21.09.2010"}
                 />
             </div>
-            <div className="container2">
-                <div className="center">
-                    <EventCard
-                        image={image1}
-                        subtitle={"Khel 2022- Intra College Sports Tournament"}
-                        detail={"366 students and 10 sports"}
-                        date={"Date of Event:21.09.2010"}
-                    />
-                </div>
-            </div>
+            
             <div className="empty"></div>
             <Footer />
         </div>
