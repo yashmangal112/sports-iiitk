@@ -1,109 +1,120 @@
+/* Set the background image to cover the entire screen height */
 .gallery-bg {
     position: absolute;
     width: 100%;
-    height: 557px;
+    height: 50vh;
     background-repeat: no-repeat;
-    left: 8px;
-    top: 70px;
+    left: 0;
+    top: 0;
     background-image: url(./images/event-bg.png);
     background-color: #000000;
     opacity: 0.5;
     z-index: -1;
-    margin-top: 15px;
 }
 
+/* Center the heading and content, and set a maximum width */
 .heading-gallery {
     color: white;
     text-align: center;
+    margin-top: 5vh;
+    padding: 0 2rem;
 }
 
+/* Use a responsive font size for the heading */
 .heading1 {
     font-weight: 500;
-    font-size: 38px;
-    line-height: 20px;
-    margin-top: 50px;
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 2rem;
 }
 
+/* Make the view image responsive */
 .view-bg {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    margin-top: -30px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    margin-top: -2rem;
 }
-
+.tobehead{
+    margin-top: 74px;
+}
+/* Use a responsive font size for the content, and center the text */
 .content-gallery {
     font-weight: 400;
-    font-size: 21px;
-    line-height: 31px;
-    width: 840px;
-    height: 125px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 60px;
+    font-size: 1.8rem;
+    line-height: 1.4;
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    text-align: justify;
 }
 
+/* Center the carousel and set a margin-top */
 .carousel {
     display: flex;
     justify-content: center;
+    margin-top: 5vh;
 }
 
+/* Adjust the margin-top for smaller screens */
 .carousel-root {
-    margin-top: 250px;
+    margin-top: 10vh;
 }
 
-
+/* Set the height of the carousel images, and make them responsive */
 .carousel .slide {
-    height: 25rem;
+    height: 60vh;
 }
 
 .carousel .slide img {
     max-height: 100%;
-    width: auto;
+    max-width: 100%;
 }
 
+/* Set the width of the images to 80%, and center them */
 .image {
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 5vh;
     height: 100%;
-    width: 500px;
+    width: 80%;
 }
 
+/* Hide the carousel controls */
 .carousel-status,
 .thumb,
 .control-dots {
-    visibility: hidden;
+    display: none;
 }
 
-.carousel .control-prev.control-arrow {
-    margin-left: 50px;
-}
-
-
-
-.carousel .control-next.control-arrow {
-    margin-right: 50px;
-}
-
-
+/* Hide the rectangle elements */
 .rectangle-right {
-    position: absolute;
-    width: 110px;
-    height: 697px;
-    right: 100px;
-    top: 482px;
-
-    background: rgba(2, 43, 123, 0.64);
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+    display: none;
 }
 
 .rectangle-left {
-    position: absolute;
-    width: 110px;
-    height: 697px;
-    left: 100px;
-    top: 482px;
+    display: none;
+}
 
-    background: rgba(2, 43, 123, 0.64);
-    transform: matrix(-1, 0, 0, 1, 0, 0);
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Adjust the font sizes */
+    .heading1 {
+        font-size: 2rem;
+    }
+
+    .content-gallery {
+        font-size: 1.4rem;
+    }
+
+    /* Adjust the height of the carousel images */
+    .carousel .slide {
+        height: 50vh;
+    }
+
+    /* Make the images full width */
+    .image {
+        width: 100%;
+    }
 }

@@ -70,7 +70,7 @@ function Header() {
                             </NavLink>
                         </li>
                         <li className="headlist">
-                            <a href="#contact" className="button">
+                            <a href=".#contact" className="button">
                                 CONTACT
                             </a>
                         </li>
@@ -107,7 +107,7 @@ function Header() {
                             <NavLink to="/gallery" className="button">
                                 Gallery
                             </NavLink>
-                            <a href="/#contact" className="button">
+                            <a href=".#contact" className="button">
                                 CONTACT
                             </a>
                    
@@ -123,14 +123,5 @@ function Header() {
             
     );
 
-
-
-
-
 }
 export default Header;
-
-/**
-
-
- */
