@@ -7,7 +7,7 @@ function Gallery() {
   return (
     <div>
       <Header />
-      <div>
+      <div className="tobehead">
         <div className="gallery-bg"></div>
         <div className="heading-gallery">
           <p className="heading1">View Gallery</p>
