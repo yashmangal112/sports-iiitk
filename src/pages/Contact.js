@@ -43,13 +43,13 @@ function Contact() {
           </p>
           <div className="inputinfo">
             <form>
-              <input className="input-css" placeholder="Name"></input>
-              <input className="input-css" placeholder="Email"></input>
+              <input className="input-css" type="name" autoComplete="true" placeholder="Name" required></input>
+              <input className="input-css" type="email" autoComplete="true" placeholder="Email" required></input>
               <textarea
                 className="message input-css"
                 placeholder="Message"
               ></textarea>
-              <button className="submit" type="submit">
+              <button className="submit" type="submit" required>
                 Send
               </button>
             </form>

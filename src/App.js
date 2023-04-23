@@ -1,10 +1,9 @@
 import "./App.css";
-import Home from "./pages/Home.js";
-import About from "./pages/About.js";
-import Contact from "./pages/Contact.js";
 import Event from "./pages/Event.js";
 import Team from "./pages/Team.js";
 import Gallery from "./pages/Gallery_mainpg";
+import Home from "./pages/Home.js";
+
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {

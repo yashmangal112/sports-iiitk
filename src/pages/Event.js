@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import "../Event.css";
 import Header from "../common/Header.js";
 import Footer from "../common/Footer.js";
