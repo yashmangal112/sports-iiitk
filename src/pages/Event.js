@@ -1,13 +1,23 @@
-/* eslint-disable jsx-a11y/anchor-is-valid */
+
 import "../Event.css";
 import Header from "../common/Header.js";
 import Footer from "../common/Footer.js";
-import image1 from "../images/random.jpg";
+import image1 from "../images/random.png";
 import EventCard from "../pages/Event-card.js";
+import {useMediaQuery} from "react-responsive";
+
 function Event() {
+    const Desktop = ({children}) => {
+        const isDesktop = useMediaQuery({minWidth: 767})
+        return isDesktop ? children : null
+    }
+    const Mobile = ({children}) => {
+        const isMobile = useMediaQuery({maxWidth: 767})
+        return isMobile ? children : null
+    }
     return (
         <div>
-            <Header />
+            <Header/>
             <div className="event">
                 <div className="bg-image"></div>
                 <div className="title">
@@ -30,17 +40,77 @@ function Event() {
                     </ul>
                 </div>
             </div>
-            <div className="container1">
-                <EventCard
+
+
+            <Mobile>
+                <div className="container1">
+                    {/*NOTE: Use transparent (png) and Image with same dimensions as src/images/random.png*/}
+                    <EventCard
+                        image={image1}
+                        href_value="#"
+                        subtitle={"Khel 2022- Intra College Sports Tournament"}
+                        detail={"365 students and 14 sports"}
+                        date={"Date of Event:21.09.2010"}
+                    /><EventCard
                     image={image1}
+                    href_value="#"
+                    subtitle={"Khel 2022- Intra College Sports Tournament"}
+                    detail={"365 students and 14 sports"}
+                    date={"Date of Event:21.09.2010"}
+                /><EventCard
+                    image={image1}
+                    href_value="#"
+                    subtitle={"Khel 2022- Intra College Sports Tournament"}
+                    detail={"365 students and 14 sports"}
+                    date={"Date of Event:21.09.2010"}
+                /><EventCard
+                    image={image1}
+                    href_value="#"
                     subtitle={"Khel 2022- Intra College Sports Tournament"}
                     detail={"365 students and 14 sports"}
                     date={"Date of Event:21.09.2010"}
                 />
-            </div>
-            
+                </div>
+            </Mobile>
+            <Desktop>
+                <div className="container1">
+                    {/*NOTE: Use transparent (png) and Image with same dimensions as src/images/random.png*/}
+                    <EventCard
+                        image={image1}
+                        href_value="#"
+                        subtitle={"Khel 2022- Intra College Sports Tournament"}
+                        detail={"365 students and 14 sports"}
+                        date={"Date of Event:21.09.2010"}
+                    /><EventCard
+                    image={image1}
+                    href_value="#"
+                    subtitle={"Khel 2022- Intra College Sports Tournament"}
+                    detail={"365 students and 14 sports"}
+                    date={"Date of Event:21.09.2010"}
+                />
+                </div>
+
+                <div className="container1">
+
+                    <EventCard
+                        image={image1}
+                        href_value="#"
+                        subtitle={"Khel 2022- Intra College Sports Tournament"}
+                        detail={"365 students and 14 sports"}
+                        date={"Date of Event:21.09.2010"}
+                    /><EventCard
+                    image={image1}
+                    href_value="#"
+                    subtitle={"Khel 2022- Intra College Sports Tournament"}
+                    detail={"365 students and 14 sports"}
+                    date={"Date of Event:21.09.2010"}
+                />
+                </div>
+            </Desktop>
+
+
             <div className="empty"></div>
-            <Footer />
+            <Footer/>
         </div>
     );
 }

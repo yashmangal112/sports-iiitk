@@ -3,10 +3,11 @@ import "../Team.css";
 import Header from "../common/Header.js";
 import Footer from "../common/Footer.js";
 import TeamCard from "./Team-card.js";
+
 function Team() {
     return (
         <div>
-            <Header />
+            <Header/>
             <div className="heading">
                 <p>OUR TEAM</p>
             </div>
@@ -20,23 +21,13 @@ function Team() {
                         fb="https://fb.com"
                         linkedin="https://linked.in"
                         pfplink="https://satya.devh.in/assets/images/logo-icon.png"
-                        style={{ display: "none" }} // Set the style to display:none
+                        style={{display: "none"}} // Set the style to display:none
                         className=""
                     />
-                    {/* <TeamCard
-                    name="Rahul"
-                    bio="bio"
-                    twitter="https://twitter.com"
-                    insta="https://ig.me"
-                    fb="https://fb.com"
-                    linkedin="https://linked.in"
-                    pfplink="https://satya.devh.in/assets/images/logo-icon.png"
-                    style={{ display: "none" }} // Set the style to display:none
-                    className=""
-                /> */}
+                    {}
                 </div>
             </div>
-            <Footer />
+            <Footer/>
         </div>
     );
 }
