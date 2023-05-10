@@ -1,4 +1,4 @@
-/* Set the background image to cover the entire screen height */
+
 .gallery-bg {
     position: absolute;
     width: 100%;
@@ -12,7 +12,7 @@
     z-index: -1;
 }
 
-/* Center the heading and content, and set a maximum width */
+
 .heading-gallery {
     color: white;
     text-align: center;
@@ -20,7 +20,7 @@
     padding: 0 2rem;
 }
 
-/* Use a responsive font size for the heading */
+
 .heading1 {
     font-weight: 500;
     font-size: 3rem;
@@ -28,7 +28,7 @@
     margin-bottom: 2rem;
 }
 
-/* Make the view image responsive */
+
 .view-bg {
     display: block;
     margin: 0 auto;
@@ -36,10 +36,12 @@
     height: auto;
     margin-top: -2rem;
 }
-.tobehead{
+
+.tobehead {
     margin-top: 74px;
 }
-/* Use a responsive font size for the content, and center the text */
+
+
 .content-gallery {
     font-weight: 400;
     font-size: 1.8rem;
@@ -51,19 +53,19 @@
     text-align: justify;
 }
 
-/* Center the carousel and set a margin-top */
+
 .carousel {
     display: flex;
     justify-content: center;
     margin-top: 5vh;
 }
 
-/* Adjust the margin-top for smaller screens */
+
 .carousel-root {
     margin-top: 10vh;
 }
 
-/* Set the height of the carousel images, and make them responsive */
+
 .carousel .slide {
     height: 60vh;
 }
@@ -73,7 +75,7 @@
     max-width: 100%;
 }
 
-/* Set the width of the images to 80%, and center them */
+
 .image {
     margin: 0 auto;
     margin-top: 5vh;
@@ -81,14 +83,14 @@
     width: 80%;
 }
 
-/* Hide the carousel controls */
+
 .carousel-status,
 .thumb,
 .control-dots {
     display: none;
 }
 
-/* Hide the rectangle elements */
+
 .rectangle-right {
     display: none;
 }
@@ -97,9 +99,9 @@
     display: none;
 }
 
-/* Media query for smaller screens */
+
 @media screen and (max-width: 768px) {
-    /* Adjust the font sizes */
+    
     .heading1 {
         font-size: 2rem;
     }
@@ -108,12 +110,12 @@
         font-size: 1.4rem;
     }
 
-    /* Adjust the height of the carousel images */
+    
     .carousel .slide {
         height: 50vh;
     }
 
-    /* Make the images full width */
+    
     .image {
         width: 100%;
     }

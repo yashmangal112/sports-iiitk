@@ -1,24 +1,23 @@
 function EventCard(props) {
     return (
         <div>
-            <div className="column">
-                <div class="flip-card">
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img
-                                className="images"
-                                src={props.image}
-                                alt="Avatar"
-                            />
-                        </div>
-                        <div class="flip-card-back">
-                            <h3 className="sub-title">{props.subtitle}</h3>
-                            <h5 className="details">{props.detail}</h5>
-                            <h5 className="details">{props.date}</h5>
-                            <button className="btn">
-                                <a href="#">More Details</a>
+            <div className="myCard">
+                <div className="innerCard">
+                    <div className="frontSide">
+                        <img alt="" src={props.image} id="event_img"></img>
+                        <p className="title__">{props.subtitle}</p>
+                        <button className="shadow__btn">
+                            SEE MORE
+                        </button>
+                    </div>
+                    <div className="backSide">
+                        <p className="title__">{props.detail}</p>
+                        <p>{props.date}</p>
+                        <a href={props.href_value}>
+                            <button className="shadow__btn">
+                                Know More
                             </button>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
