@@ -3,6 +3,7 @@ import Footer from "../common/Footer.js";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import {useMediaQuery} from 'react-responsive';
+import LazyLoad from 'react-lazyload';
 
 function Home() {
     const Desktop = ({children}) => {
@@ -34,19 +35,21 @@ function Home() {
                     </div>
 
                     <div id="about" className="photos">
-
+                        <LazyLoad>
                         <img
                             src={require("../images/Rectangle 8.png")}
                             alt="img1"
-                        ></img>
+                        ></img></LazyLoad>
+                        <LazyLoad>
                         <img
                             src={require("../images/Rectangle 17.png")}
                             alt="img2"
-                        ></img>
+                        ></img></LazyLoad>
+                        <LazyLoad>
                         <img
                             src={require("../images/Rectangle 11.png")}
                             alt="img3"
-                        ></img>
+                        ></img></LazyLoad>
                     </div>
                     <About/>
                     <Contact/>
