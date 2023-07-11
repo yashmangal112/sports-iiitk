@@ -50,7 +50,7 @@ input {
 footer {
     padding: 70px 5% 20px;
     width: 100vw;
-    background-color: black;
+    background-color: #010917;
     text-align: center;
 }
 
@@ -104,12 +104,13 @@ footer {
 .designed-by {
     padding: 30px;
     font-family: 'Inter', sans-serif;
+    font-size: 22px;
 }
 
 .page {
     background: linear-gradient(97.73deg, #012253 42.35%, #010f28 96.47%);
     background-image: url("./images/Vector group.png"),
-    url("./images/men-with-football.png");
+        url("./images/men-with-football.png");
     background-repeat: no-repeat, no-repeat;
     background-position: -1%, 56vw;
     height: 90vh;
@@ -118,7 +119,7 @@ footer {
 
 .main {
     padding: 6% 15%;
-    width: 60vw;
+    /* width: 60vw; */
     font-size: 24px;
     color: white;
 }
@@ -163,7 +164,7 @@ footer {
     font-weight: 500;
     font-size: 20px;
     line-height: 20px;
-    
+
     text-transform: capitalize;
     color: #5be1ff;
 }
@@ -237,11 +238,14 @@ footer {
     font-size: 24px;
     margin-left: -40%;
     font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.05rem;
+    width: 100%;
+    transform: translateX(120px);
 }
 
 .getintouch {
     text-align: center;
-    margin: auto auto auto auto;
+    margin: auto;
     padding: 2%;
     margin: 10% 10% 10% 5%;
 }
@@ -259,10 +263,10 @@ footer {
     font-size: 24px;
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
-    
-    
+
+
     line-height: 30px;
-    
+
 
     display: flex;
     align-items: center;
@@ -281,7 +285,7 @@ footer {
 }
 
 textarea {
-    width: 90%;
+    width: 100%;
     margin-top: 20px;
     height: 18vh;
     font: Arial grey;
@@ -300,12 +304,33 @@ textarea {
     border-radius: 10px;
     padding: 8px 16px;
     margin: 20px;
+    transform: translateX(-150px);
     cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/* 
+.submit {
+    margin-right: -4%;
+    background-color: #032364;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 16px;
+    font-family: Arial;
+} */
+
+.submit:hover {
+    background: linear-gradient(90deg, rgba(0, 46, 208, 0.15), rgba(0, 46, 208, 0.15)), linear-gradient(30deg, #579AFF 0%, #3066BE 100%);
+
 }
 
 .secretery-info {
     margin-bottom: inherit;
-    
+
 }
 
 .secretery-info i {
@@ -317,9 +342,9 @@ textarea {
     display: flex;
     position: absolute;
     bottom: 12%;
-    
-    
 }
+
+
 
 .icon-contact i {
     margin: 0 12px;
@@ -374,7 +399,9 @@ textarea {
 .input-css::placeholder {
 
     font-family: Arial;
-    padding: 10px;
+    padding-top: 10px;
+    color: #010917;
+    font-size: 18px;
 }
 
 
@@ -382,6 +409,14 @@ textarea {
     border-color: #032364;
     box-shadow: 0px 0px 10px #03215E;
     border-radius: 4px;
+}
+
+.name1 {
+    transform: translateX(-10px);
+}
+
+.email {
+    transform: translateX(10px);
 }
 
 .footer-desc {
@@ -450,7 +485,7 @@ textarea {
     .logo {
         height: 100px;
         top: 0;
-        background-color: #1a69e0;
+        /* background-color: #1a69e0; */
         width: 130px;
         color: white;
         font-weight: 500;
@@ -462,10 +497,17 @@ textarea {
         border-radius: 10px;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
-        box-shadow: 0px 0px 2px 2px #1a69e0;
+        /* box-shadow: 0px 0px 2px 2px #1a69e0; */
+    }
+
+    .logo img {
+        height: 70px;
+        transform: translateY(-30px);
     }
 
     .photos {
+        /* background-color: red; */
+        margin-top: 10rem;
         position: absolute;
         top: 90vh;
         padding-left: 15%;
@@ -706,6 +748,20 @@ textarea {
         border-radius: 4px;
     }
 
+    .name1 {
+        transform: translateX(4px);
+    }
+
+    .email {
+        transform: translateX(4px);
+
+    }
+
+    .message {
+        transform: translateX(4px);
+
+    }
+
     .message {
         margin: 4%;
     }
@@ -720,6 +776,7 @@ textarea {
         width: 100%;
         font-size: 16px;
         font-family: Arial;
+        transform: translateX(7px);
     }
 
     .submit:hover {

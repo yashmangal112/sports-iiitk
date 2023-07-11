@@ -37,8 +37,18 @@
     text-align: center;
 }
 
+.NAVLINKS {
+    display: flex;
+    justify-content: space-evenly;
+    transform: translateX(490px);
+}
+
 .navlist {
     padding: 0.5rem;
+}
+
+a:hover {
+    color: rgb(176, 175, 175);
 }
 
 ul li {
@@ -46,9 +56,10 @@ ul li {
     padding: 0.5rem;
 }
 
+/* 
 .event .navbar ul li ~ li {
     border-left: 1px solid white;
-}
+} */
 
 .images {
     padding: 0;
@@ -152,26 +163,11 @@ ul li {
     width: 10rem;
 }
 
-
-
-
-
-
 .myCard {
     background-color: transparent;
     width: 400px;
     height: 300px;
     perspective: 1000px;
-}
-
-@media (max-width: 768px) {
-    .myCard {
-        background-color: transparent;
-        width: 100%;
-        height: 25rem;
-        perspective: 1000px;
-        margin-bottom: 70px;
-    }
 }
 
 #event_img {
@@ -268,9 +264,20 @@ ul li {
 
 .shadow__btn:hover {
     box-shadow: 0 0 5px rgb(0, 140, 255),
-    0 0 25px rgb(0, 140, 255),
-    0 0 50px rgb(0, 140, 255),
-    0 0 100px rgb(0, 140, 255);
+        0 0 25px rgb(0, 140, 255),
+        0 0 50px rgb(0, 140, 255),
+        0 0 100px rgb(0, 140, 255);
+}
+
+
+@media (max-width: 768px) {
+    .myCard {
+        background-color: transparent;
+        width: 100%;
+        height: 25rem;
+        perspective: 1000px;
+        margin-bottom: 70px;
+    }
 }
 
 @media (min-width: 750px) {
@@ -282,7 +289,7 @@ ul li {
 
     .myCard {
         background-color: transparent;
-        
+
         height: 32rem;
         perspective: 1000px;
         margin-left: 70px;
@@ -295,6 +302,12 @@ ul li {
         text-align: center;
         margin: 0;
     }
+}
 
-
+@media (max-width: 450px) {
+    .NAVLINKS {
+        display: flex;
+        justify-content: space-evenly;
+        transform: translateX(50px);
+    }
 }

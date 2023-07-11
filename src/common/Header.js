@@ -3,17 +3,18 @@ import { useMediaQuery } from 'react-responsive';
 import React, { useState, useEffect } from "react";
 import "./Header.css";
 import { CSSTransition } from "react-transition-group";
+import logo from "../images/Sports_Club.png"
 function Header() {
-    const Desktop = ({ children }) => {
-        const isDesktop = useMediaQuery({ minWidth: 992 })
-        return isDesktop ? children : null
-      }
-      const Mobile = ({ children }) => {
-        const isMobile = useMediaQuery({ maxWidth: 767 })
-        return isMobile ? children : null
-      }
-   
-    const [isNavVisible, setNavVisibility] = useState(false);
+  const Desktop = ({ children }) => {
+    const isDesktop = useMediaQuery({ minWidth: 992 })
+    return isDesktop ? children : null
+  }
+  const Mobile = ({ children }) => {
+    const isMobile = useMediaQuery({ maxWidth: 767 })
+    return isMobile ? children : null
+  }
+
+  const [isNavVisible, setNavVisibility] = useState(false);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
@@ -37,91 +38,73 @@ function Header() {
   const toggleNav = () => {
     setNavVisibility(!isNavVisible);
   };
-    return (
+  return (
 
-        <div>
-            <Desktop>
-            <div className="header">
-                <div className="list">
-                    <ul>
-                        <li className="headlist">
-                            <NavLink to="/" className="button">
-                                HOME
-                            </NavLink>
-                        </li>
-                        <li className="headlist">
-                            <a href="#about" className="button">
-                                ABOUT
-                            </a>
-                        </li>
-                        <li className="headlist">
-                            <NavLink to="/team" className="button">
-                                TEAM
-                            </NavLink>
-                        </li>
-                        <li className="headlist">
-                            <NavLink to="/event" className="button">
-                                EVENT
-                            </NavLink>
-                        </li>
-                        <li className="headlist">
-                            <NavLink to="/gallery" className="button">
-                                Gallery
-                            </NavLink>
-                        </li>
-                        <li className="headlist">
-                            <a href=".#contact" className="button">
-                                CONTACT
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div className="logo">SPORTS</div>
-            </Desktop>
-            
-            <Mobile>
-            <header className="Header">
-      <h>SPORTS</h>
+    <div>
+      <Desktop>
+        <div className="header">
+          <div className="list">
+            <ul>
+              <li className="headlist">
+                <NavLink to="/" className="button">
+                  HOME
+                </NavLink>
+              </li>
+              <li className="headlist">
+                <NavLink to="/team" className="button">
+                  TEAM
+                </NavLink>
+              </li>
+              <li className="headlist">
+                <NavLink to="/event" className="button">
+                  EVENT
+                </NavLink>
+              </li>
+              <li className="headlist">
+                <NavLink to="/gallery " className="button">
+                  Gallery
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div className="logo"><img src={logo} alt="logo" /></div>
+      </Desktop>
 
-      <CSSTransition
-        in={!isSmallScreen || isNavVisible}
-        timeout={350}
-        classNames="NavAnimation"
-        unmountOnExit
-      >
-        <nav className="Nav">
-        
-                            <NavLink to="/" className="button">
-                                HOME
-                            </NavLink>
-                            <a href="#about" className="button">
-                                ABOUT
-                            </a>
-                            <NavLink to="/team" className="button">
-                                TEAM
-                            </NavLink>
-                            <NavLink to="/event" className="button">
-                                EVENT
-                            </NavLink>
-                            <NavLink to="/gallery" className="button">
-                                Gallery
-                            </NavLink>
-                            <a href=".#contact" className="button">
-                                CONTACT
-                            </a>
-                   
-         
-        </nav>
-      </CSSTransition>
-      <button onClick={toggleNav} className="Burger">
-        🤾‍♀️
-      </button>
-    </header>
-            </Mobile>
-            </div> 
-            
-    );
+      <Mobile>
+        <header className="Header">
+          <div className="logo"><a href="#"><img src={logo} alt="logo" style={{ height: "50px", transform: "translateX(30px)", marginTop: "5px", marginBottom: "5px" }} /></a></div>
+
+          <CSSTransition
+            in={!isSmallScreen || isNavVisible}
+            timeout={350}
+            classNames="NavAnimation"
+            unmountOnExit
+          >
+            <nav className="Nav">
+
+              <NavLink to="/" className="button">
+                HOME
+              </NavLink>
+              <NavLink to="/team" className="button">
+                TEAM
+              </NavLink>
+              <NavLink to="/event" className="button">
+                EVENT
+              </NavLink>
+              <NavLink to="/gallery" className="button">
+                Gallery
+              </NavLink>
+            </nav>
+          </CSSTransition>
+          <button onClick={toggleNav} className="Burger">
+            🤾‍♀️
+          </button>
+        </header>
+      </Mobile>
+    </div>
+
+  );
 
 }
 export default Header;
