@@ -28,7 +28,7 @@ function UncontrolledExample() {
             <Mobile>
 
                 <Carousel className='CAROUSEL' style={{
-                    height: "400px", width: "250px", background: "#0c142c", border: "4px solid #7cdacc", boxShadow: " 0 6px 10px rgba(207, 212, 222, 1)", borderRadius: "10px", padding: "2rem", transform: "translateX(-25px)",
+                    height: "400px", width: "250px", background: "#0c142c", border: "4px solid #7cdacc", boxShadow: " 0 6px 10px rgba(207, 212, 222, 1)", borderRadius: "10px", padding: "2rem", transform: "translateX(-30px)",
                 }}>
                     <Carousel.Item className='CAROUSEL.ITEM' style={{ background: "#0c142c", }} >
 
