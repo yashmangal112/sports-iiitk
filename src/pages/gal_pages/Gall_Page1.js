@@ -95,7 +95,7 @@ const Gall_Page1 = () => {
             data.map((item, index) => {
               return (
                 <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-                  <img src={item.imgSrc} style={{ width: "100%", padding: 0, borderRadius: "4px" }} />
+                  <img src={item.imgSrc} alt="Image" style={{ width: "100%", padding: 0, borderRadius: "4px" }} />
                 </div>
               )
             })
