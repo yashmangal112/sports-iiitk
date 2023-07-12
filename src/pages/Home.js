@@ -10,13 +10,13 @@ function Home() {
         const isDesktop = useMediaQuery({minWidth: 767})
         return isDesktop ? children : null
     }
-    const Mobile = ({children}) => {
+    const Mobile = ({ children}) => {
         const isMobile = useMediaQuery({maxWidth: 767})
         return isMobile ? children : null
     }
     return (
         <div>
-            <Header/>
+            <Header />
             <Mobile>
                 <div className="mobile-container">
                     <div className="bg-image-home">
@@ -26,71 +26,46 @@ function Home() {
                                 From Zero To Sports Hero
                             </h2>
                             <p>
-                                we focus on enable we focus on enable we focus on enable we
-                                focus on enable we focus on enable we focus on enable we
-                                focus on enable we focus on enable we focus on enable we
-                                focus on enable
+                                The sports club of IIIT Kota is a vibrant and dynamic organization that caters to the athletic needs and interests of the student community. With a wide range of sports activities and facilities, the club provides ample opportunities for students to engage in physical fitness, skill development, and friendly competition. The dedicated team of sports enthusiasts work tirelessly to organize regular tournaments, practice sessions, and inter-college events, fostering a healthy sports culture on campus.
                             </p>
                         </div>
                     </div>
 
                     <div id="about" className="photos">
                         <LazyLoad>
-                        <img
-                            src={require("../images/Rectangle 8.png")}
-                            alt="img1"
-                        ></img></LazyLoad>
+                            <img
+                                src={require("../images/Rectangle 8.png")}
+                                alt="img1"
+                            ></img></LazyLoad>
                         <LazyLoad>
-                        <img
-                            src={require("../images/Rectangle 17.png")}
-                            alt="img2"
-                        ></img></LazyLoad>
+                            <img
+                                src={require("../images/Rectangle 17.png")}
+                                alt="img2"
+                            ></img></LazyLoad>
                         <LazyLoad>
-                        <img
-                            src={require("../images/Rectangle 11.png")}
-                            alt="img3"
-                        ></img></LazyLoad>
+                            <img
+                                src={require("../images/Rectangle 11.png")}
+                                alt="img3"
+                            ></img></LazyLoad>
                     </div>
-                    <About/>
-                    <Contact/>
-                    <Footer/>
+                    <About />
+                    <Contact />
+                    <Footer />
                 </div>
             </Mobile>
             <Desktop>
                 <div className="bg-image-home">
                     <div className="page">
                         <div className="main">
-                            <h1>From Zero To Sports Hero</h1>
-                            we focus on enable we focus on enable we focus on enable we
-                            focus on enable we focus on enable we focus on enable we
-                            focus on enable we focus on enable we focus on enable we
-                            focus on enable
+                            <h1>From Zero to Sports Hero</h1>
+                            <p>The sports club of IIIT Kota is a vibrant and dynamic organization that caters to the athletic needs and interests of the student community. With a wide range of sports activities and facilities, the club provides ample opportunities for students to engage in physical fitness, skill development, and friendly competition. The dedicated team of sports enthusiasts work tirelessly to organize regular tournaments, practice sessions, and inter-college events, fostering a healthy sports culture on campus.</p>
                         </div>
                     </div>
                 </div>
 
-                <img id="arrow"
-                     src={require("../images/arrow.png")}
-                     alt="img1"
-                ></img>
-                <div id="about" className="photos">
-
-                    <img
-                        src={require("../images/Rectangle 8.png")}
-                        alt="img1"
-                    ></img>
-                    <img
-                        src={require("../images/Rectangle 17.png")}
-                        alt="img2"
-                    ></img>
-                    <img
-                        src={require("../images/Rectangle 11.png")}
-                        alt="img3"
-                    ></img>
-                </div>
-                <About/>
-                <Contact/>
-                <Footer/>
+                <About />
+                <Contact />
+                <Footer />
             </Desktop>
         </div>
 

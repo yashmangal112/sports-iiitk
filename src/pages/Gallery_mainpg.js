@@ -1,13 +1,14 @@
 import "../Gallery_mp.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import {Carousel} from "react-responsive-carousel";
+// import { Carousel } from "react-responsive-carousel";
 import Header from "../common/Header.js";
 import Footer from "../common/Footer.js";
+import NewGallery from "./NewGallery";
 
 function Gallery() {
     return (
         <div>
-            <Header/>
+            <Header />
             <div className="tobehead">
                 <div className="gallery-bg"></div>
                 <div className="heading-gallery">
@@ -27,7 +28,7 @@ function Gallery() {
                 </div>
                 <div className="rectangle-left"></div>
                 <div className="rectangle-right"></div>
-                <Carousel infiniteLoop autoPlay>
+                {/* <Carousel infiniteLoop autoPlay className="GAL_CAROUSEL" >
                     <div className="image">
                         <img src={require("../images/Rectangle 8.png")} alt="#"/>
                     </div>
@@ -43,10 +44,16 @@ function Gallery() {
                     <div className="image">
                         <img src={require("../images/Rectangle 17.png")} alt="#"/>
                     </div>
+                </Carousel> */}
 
-                </Carousel>
+                <div style={{ marginTop: "5rem" }}>
+                    <NewGallery />
+                </div>
+
+
+
             </div>
-            <Footer/>
+            <Footer />
         </div>
     );
 }

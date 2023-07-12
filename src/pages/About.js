@@ -10,7 +10,7 @@ function About() {
                     ></img>
                 </div>
                 <div className="text">
-                    {}
+                 
                     <div className="parrel">
                         <div className="head"></div>
                         <p className="text2">About the club</p>
